@@ -29,7 +29,7 @@ class SpeciesData extends Component {
     render() {
         return (
             <div> 
-                Nam: {this.state.name}<br />
+                Name: {this.state.name}<br />
                 Language: {this.state.language}<br />
                 Eye Color: {this.state.eye_colors}<br />
                 Classification: {this.state.classification}<br />
