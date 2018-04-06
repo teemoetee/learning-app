@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import SpeciesList from './SpeciesList';
 import SpeciesData from './SpeciesData';
+import SomeForm from './SomeForm';
 
 class App extends Component {
   constructor() {
@@ -41,11 +42,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Link to='/someForm'>SOME FORM</Link><br />
+        <Link to='/'>HOME</Link><br /><br /><br />
         <Route exact path="/" render={(props) => (
           <SpeciesList {...props} allSpecies={this.state.species} />
         )} />
         <Route path="/species/:id" render={(props) => (
           <SpeciesData {...props} allSpecies={this.state.species} />
+        )} />
+        <Route path="/someForm" render={() => (
+          <SomeForm />
         )} />
       </div>
     );
