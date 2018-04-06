@@ -30,7 +30,7 @@ class SpeciesData extends Component {
         return (
             <div>
                 {alert(`
-                Name: ${this.state.name}
+                This is the species data for ${this.state.name}
                 Language: ${this.state.language}
                 Eye Color: ${this.state.eye_colors}
                 Classification: ${this.state.classification}
