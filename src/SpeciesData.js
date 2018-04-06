@@ -28,13 +28,21 @@ class SpeciesData extends Component {
     
     render() {
         return (
-            <div> 
-                Name: {this.state.name}<br />
+            <div>
+                {alert(`
+                Name: ${this.state.name}
+                Language: ${this.state.language}
+                Eye Color: ${this.state.eye_colors}
+                Classification: ${this.state.classification}
+                Life Span: ${this.state.average_lifespan}
+                Skin Color: ${this.state.skin_colors}
+                `)} 
+                {/* Name: {this.state.name}<br />
                 Language: {this.state.language}<br />
                 Eye Color: {this.state.eye_colors}<br />
                 Classification: {this.state.classification}<br />
                 Life Span: {this.state.average_lifespan}<br />
-                Skin Color: {this.state.skin_colors}<br />
+                Skin Color: {this.state.skin_colors}<br /> */}
             </div>
         )
     }
