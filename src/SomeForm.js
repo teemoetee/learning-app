@@ -1,16 +1,5 @@
 import React, { Component } from 'react';
 
-// class SomeForm extends Component {
-//     constructor(props) {
-//         super();
-//         })
-
-//     render() {
-//         return (<div>
-//             <h1>Hello world!</h1>
-//             </div>);
-//     }
-// }
 class SomeForm extends React.Component {
     constructor(props) {
       super(props);
@@ -20,13 +9,13 @@ class SomeForm extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    handleChange(event) {
-      this.setState({value: event.target.value});
+    handleChange(textbox) {
+      this.setState({value: textbox.target.value});
     }
   
-    handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
-      event.preventDefault();
+    handleSubmit(textbox) {
+      alert('Hello ' + this.state.value + '!');
+      textbox.preventDefault();
     }
   
     render() {

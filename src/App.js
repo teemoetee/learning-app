@@ -42,8 +42,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to='/someForm'>SOME FORM</Link><br />
-        <Link to='/'>HOME</Link><br /><br /><br />
+        <Link to='/'>HOME</Link><br />
+        <Link to='/someForm'>SOME FORM</Link><br /><br /><br />
         <Route exact path="/" render={(props) => (
           <SpeciesList {...props} allSpecies={this.state.species} />
         )} />
